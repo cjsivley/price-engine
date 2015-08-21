@@ -1,0 +1,803 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package boxpackage;
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+import java.util.Locale;
+/**
+ *
+ * @author Codey
+ */
+public class thebox extends javax.swing.JFrame {
+    
+    //a-ident engine method
+    public String aident(String ident){
+        String identify = ident;
+        String deviceName;
+        switch (identify) {
+        //switch takes the corrected variable "identify" and returns the device name based on the input
+		
+		//iPhone 6
+        case "1549":
+			deviceName = ("Apple iPhone 6");
+                        baseDevice.setSelectedIndex(4);
+			break;
+		case "1586":
+			deviceName = ("Apple iPhone 6");
+                        baseDevice.setSelectedIndex(4);
+			break;
+		case "1589":
+			deviceName = ("Apple iPhone 6");
+                        baseDevice.setSelectedIndex(4);
+			break;
+		//iPhone 6 Plus
+		case "1522":
+			deviceName = ("Apple iPhone 6 Plus");
+                        baseDevice.setSelectedIndex(5);
+			break;
+		case "1524":
+			deviceName = ("Apple iPhone 6 Plus");
+                        baseDevice.setSelectedIndex(5);
+			break;
+		case "1593":
+			deviceName = ("Apple iPhone 6 Plus");
+                        baseDevice.setSelectedIndex(5);
+			break;
+		
+		//iPhone 5s
+		case "1453":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		case "1457":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		case "1518":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		case "1528":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		case "1530":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		case "1533":
+			deviceName = ("Apple iPhone 5s");
+                        baseDevice.setSelectedIndex(3);
+			break;
+		//iPhone 5c
+		case "1456":
+			deviceName = ("Apple iPhone 5c");
+                        baseDevice.setSelectedIndex(2);
+			break;
+		case "1507":
+			deviceName = ("Apple iPhone 5c");
+                        baseDevice.setSelectedIndex(2);
+			break;
+		case "1516":
+			deviceName = ("Apple iPhone 5c");
+                        baseDevice.setSelectedIndex(2);
+			break;
+		case "1529":
+			deviceName = ("Apple iPhone 5c");
+                        baseDevice.setSelectedIndex(2);
+			break;
+		case "1532":
+			deviceName = ("Apple iPhone 5c");
+                        baseDevice.setSelectedIndex(2);
+			break;
+		case "1428":
+            deviceName = ("Apple iPhone 5");
+            baseDevice.setSelectedIndex(1);
+			break;
+        case "1429":
+            deviceName = ("Apple iPhone 5");
+            baseDevice.setSelectedIndex(1);
+            break;
+        case "1387":
+            deviceName = ("Apple iPhone 4S");
+            baseDevice.setSelectedIndex(0);
+            break;
+        case "1349":
+            deviceName = ("Apple iPhone 4 Verizon");
+            break;
+        case "1332":
+            deviceName = ("Apple iPhone 4 AT&T");
+            break;
+        case "1303":
+            deviceName = ("Apple iPhone 3GS");
+            break;
+        case "1241":
+            deviceName = ("Apple iPhone 3G");
+            break;
+        // ---------------End iPhone, Begin iPods--------------------------
+        case "1421":
+            deviceName = ("iPod Touch 5th Gen");
+            baseDevice.setSelectedIndex(14);
+            break;
+        case "1367":
+            deviceName = ("iPod Touch 4th Gen");
+            baseDevice.setSelectedIndex(13);
+            break;
+        case "1318":
+            deviceName = ("iPod Touch 3rd Gen 32/64 GB");
+            break;
+        case "1288":
+            deviceName = ("iPod Touch 2nd Gen/3rd Gen 8 GB");
+            break;
+        case "1213":
+            deviceName = ("iPod Touch Original");
+            break;
+        case "1373":
+            deviceName = ("iPod Shuffle 4th Gen");
+            break;
+        case "1271":
+            deviceName = ("iPod Shuffle 3rd Gen");
+            break;
+        case "1204":
+            deviceName = ("iPod Shuffle 2nd Gen");
+            break;
+        case "1112":
+            deviceName = ("iPod Shuffle Original");
+            break;
+        case "1446":
+            deviceName = ("iPod Nano 7th Gen");
+            break;
+        case "1366":
+            deviceName = ("iPod Nano 6th Gen");
+            break;
+        case "1320":
+            deviceName = ("iPod Nano 5th Gen");
+            break;
+        case "1285":
+            deviceName = ("iPod Nano 4th Gen");
+            break;
+        case "1236":
+            deviceName = ("iPod Nano 3rd Gen");
+            break;
+        case "1199":
+            deviceName = ("iPod Nano 2nd Gen");
+            break;
+        case "1137":
+            deviceName = ("iPod Nano 1st Gen");
+            break;
+        case "1051":
+            deviceName = ("iPod Mini 1st/2nd Gen");
+            break;
+        case "1238":
+            deviceName = ("iPod Classic 6/7th Gen");
+            break;
+        case "1136":
+            deviceName = ("iPod 5th Gen Video/Classic");
+            break;
+        case "1099":
+            deviceName = ("iPod Photo");
+            break;
+        case "1059":
+            deviceName = ("iPod 4th Gen");
+            break;
+        case "1040":
+            deviceName = ("iPod 3rd Gen");
+            break;
+        case "1019":
+            deviceName = ("iPod 2nd Gen");
+            break;
+        //-----------------------End iPods, Begin iPads---------------------------
+		//iPad Air
+		case "1566":
+			deviceName = ("iPad Air 2");
+                        baseDevice.setSelectedIndex(12);
+			break;
+		case "1567":
+			deviceName = ("iPad Air 2 + Cellular");
+                        baseDevice.setSelectedIndex(12);
+			break;
+		case "1474":
+			deviceName = ("iPad Air");
+                        baseDevice.setSelectedIndex(11);
+			break;
+		case "1475":
+			deviceName = ("iPad Air + Cellular");
+                        baseDevice.setSelectedIndex(11);
+			break;
+		//iPad Mini
+		case "1599":
+			deviceName = ("iPad Mini 3");
+			break;
+		case "1600":
+			deviceName = ("iPad Mini 3 + Cellular");
+			break;
+		case "1489":
+			deviceName = ("iPad Mini 2");
+                        baseDevice.setSelectedIndex(10);
+			break;
+		case "1490":
+			deviceName = ("iPad Mini 2 + Cellular");
+                        baseDevice.setSelectedIndex(10);
+			break;
+		case "1491":
+			deviceName = ("iPad Mini 2 + Cellular TD-LTE");
+                        baseDevice.setSelectedIndex(10);
+			break;
+        case "1455":
+            deviceName = ("iPad Mini Verizon/Sprint");
+            baseDevice.setSelectedIndex(9);
+            break;
+        case "1454":
+            deviceName = ("iPad Mini AT&T");
+            baseDevice.setSelectedIndex(9);
+            break;
+        case "1432":
+            deviceName = ("iPad Mini Wi-Fi");
+            baseDevice.setSelectedIndex(9);
+            break;
+        case "1460":
+            deviceName = ("iPad 4th Gen Verizon/Sprint");
+            baseDevice.setSelectedIndex(8);
+            break;
+        case "1459":
+            deviceName = ("iPad 4th Gen AT&T");
+            baseDevice.setSelectedIndex(8);
+            break;
+        case "1458":
+            deviceName = ("iPad 4th Gen Wi-Fi");
+            baseDevice.setSelectedIndex(8);
+            break;
+        case "1403":
+            deviceName = ("iPad 3rd Gen Verizon");
+            baseDevice.setSelectedIndex(7);
+            break;
+        case "1430":
+            deviceName = ("iPad 3rd Gen AT&T");
+            baseDevice.setSelectedIndex(7);
+            break;
+        case "1416":
+            deviceName = ("iPad 3rd Gen Wi-Fi");
+            baseDevice.setSelectedIndex(7);
+            break;
+        case "1395":
+            deviceName = ("iPad 2 Wi-Fi");
+            baseDevice.setSelectedIndex(6);
+            break;
+        case "1397":
+            deviceName = ("iPad 2 Verizon");
+            baseDevice.setSelectedIndex(6);
+            break;
+        case "1396":
+            deviceName = ("iPad 2 AT&T");
+            baseDevice.setSelectedIndex(6);
+            break;
+        case "1337":
+            deviceName = ("iPad 1st Gen Wi-Fi/3G");
+            break;
+        case "1219":
+            deviceName = ("iPad 1st Gen Wi-Fi");
+            break;
+        default:
+            deviceName = ("Device Unknown.");
+        }
+    return deviceName;
+    
+    }
+
+    /**
+     * Creates new form thebox
+     */
+    public thebox() {
+        initComponents();
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        baseDevice = new javax.swing.JList();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        hiCapMod = new javax.swing.JCheckBox();
+        engraveMod = new javax.swing.JCheckBox();
+        cableMod = new javax.swing.JCheckBox();
+        cocMod = new javax.swing.JCheckBox();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        carrierComboBox = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
+        baseCondition = new javax.swing.JComboBox();
+        jPanel4 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        storeCreditField = new javax.swing.JTextField();
+        cashField = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        deviceBox = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        output = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Device");
+
+        baseDevice.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "iPhone 4s", "iPhone 5", "iPhone 5c", "iPhone 5s", "iPhone 6", "iPhone 6 Plus", "iPad 2", "iPad 3", "iPad 4", "iPad Mini", "iPad Mini Retina", "iPad Air", "iPad Air 2", "iPod Touch 4th Gen", "iPod Touch 5th Gen" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        baseDevice.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        baseDevice.setToolTipText("Select the base device here.");
+        jScrollPane1.setViewportView(baseDevice);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setToolTipText("Programmed by Codey Sivley © 2015");
+
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/boxpackage/favgeekBannerSm.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addGap(22, 22, 22))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel9)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Modifiers"));
+
+        hiCapMod.setText("High Capacity");
+
+        engraveMod.setText("Engraved");
+        engraveMod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                engraveModActionPerformed(evt);
+            }
+        });
+
+        cableMod.setText("Cable included");
+
+        cocMod.setText("Chamber of Commerce");
+        cocMod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cocModActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(engraveMod)
+                        .addGap(18, 18, 18)
+                        .addComponent(cableMod))
+                    .addComponent(cocMod)
+                    .addComponent(hiCapMod))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cableMod)
+                    .addComponent(engraveMod))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(cocMod)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(hiCapMod)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Device Specs"));
+
+        jLabel5.setText("Carrier");
+
+        carrierComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AT&T", "Verizon", "Sprint", "T-Mobile", "Wi-Fi Only", "Other", "Unlocked" }));
+
+        jLabel2.setText("Condition");
+
+        baseCondition.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Working", "Damaged", "Dead" }));
+        baseCondition.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                baseConditionActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel5))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(baseCondition, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(carrierComboBox, 0, 166, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(carrierComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(baseCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jButton1.setText("Get Price");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Cash");
+
+        jLabel4.setText("Store Credit");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(storeCreditField, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                    .addComponent(cashField))
+                .addGap(24, 24, 24))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(storeCreditField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cashField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
+        jLabel6.setText("For FavGeek LLC");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
+        jLabel7.setText("© Codey Sivley 2015");
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("A-Identifier"));
+
+        jButton2.setText("Identify");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("A-Number");
+
+        jLabel10.setText("Model");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(deviceBox)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton2))
+                    .addComponent(output)))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(deviceBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(output, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addGap(19, 19, 19))
+        );
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel11.setText("v. 1.1");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 261, Short.MAX_VALUE)))
+                    .addComponent(jLabel1))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 72, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel11)))
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        
+        //declaration of arrays/matrix
+        int list[][] ={
+            {55,20,5},//4s
+            {100,30,10},//5
+            {95,30,10},//5c
+            {170,60,15},//5s
+            {280,90,25},//6
+            {320,110,30},//6Plus
+            {90,20,10},//iPad 2
+            {100,20,10},//iPad 3
+            {120,30,10},//iPad 4
+            {95,20,10},//iPad mini
+            {110,30,10},//iPad mini 2/ retina
+            {160,45,15},//iPad air
+            {200,45,20},//iPad air 2
+            {30,10,5},//iPod Touch 4th Gen
+            {75,15,5}//iPod Touch 5th Gen
+        };
+        
+        double carrierMod[] = new double[7];
+        carrierMod[0] = .90; //AT&T
+        carrierMod[1] = 1; //Verizon
+        carrierMod[2] = .66; //Sprint
+        carrierMod[3] = .75; //T-Mobile
+        carrierMod[4] = .9;//WiFi Only
+        carrierMod[5] = .66;//Other Carrier
+        carrierMod[6] = 1;//Unlocked
+        
+        //collection of array data
+        int arraypassX, arraypassY, arraypassZ;
+        arraypassX = baseDevice.getSelectedIndex();
+        arraypassY = baseCondition.getSelectedIndex();
+        arraypassZ = carrierComboBox.getSelectedIndex();
+        
+        //modification of carrierMods
+        if (arraypassX >= 6){ //if device is an iPad
+            carrierMod[0] = 1;
+            carrierMod[1] = .9;
+            carrierMod[2] = .8;
+            carrierMod[3] = .8;
+        }
+        //assignment of variables based on arrays
+        double carrierValue = carrierMod[arraypassZ];
+        double total = list[arraypassX][arraypassY]; //note conversion to double
+        BigDecimal rt = new BigDecimal(total);
+        BigDecimal coc = new BigDecimal(1.1);
+        BigDecimal cable = new BigDecimal(5);
+        BigDecimal cv = new BigDecimal(carrierValue);
+        BigDecimal engrave = new BigDecimal(0.9);
+        BigDecimal cashPenalty = new BigDecimal(0.7);
+        BigDecimal hiCap = new BigDecimal(1.1);
+        BigDecimal wCashPenalty;
+        //calculation of data
+        
+        rt = rt.multiply(cv);
+        //Chamber of Commerce Mod Checkbox
+        if (cocMod.isSelected() == true){
+            rt = rt.multiply(coc);
+        }
+        //Cable included checkbox
+        if (cableMod.isSelected() == true){
+            rt = rt.add(cable);
+        }
+        
+        //Engraved checkbox
+        if (engraveMod.isSelected() == true){
+            rt = rt.multiply(engrave);
+        }
+        if (hiCapMod.isSelected() == true){
+            rt = rt.multiply(hiCap);
+        }
+        wCashPenalty = rt.multiply(cashPenalty);
+        NumberFormat n = NumberFormat.getCurrencyInstance(Locale.US);
+        String storeCredit = n.format(rt);
+        String cashValue = n.format(wCashPenalty);
+        storeCreditField.setText(String.valueOf(storeCredit));
+        cashField.setText(String.valueOf(cashValue));
+    }                                        
+
+    private void cocModActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void engraveModActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    }                                          
+
+    private void baseConditionActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+    }                                             
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        String deviceName, identify;
+        int identifyNum;
+        identify = deviceBox.getText();
+        deviceName = aident(identify);
+        
+        output.setText(deviceName);
+        
+    }                                        
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(thebox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(thebox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(thebox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(thebox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new thebox().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JComboBox baseCondition;
+    private javax.swing.JList baseDevice;
+    private javax.swing.JCheckBox cableMod;
+    private javax.swing.JComboBox carrierComboBox;
+    private javax.swing.JTextField cashField;
+    private javax.swing.JCheckBox cocMod;
+    private javax.swing.JTextField deviceBox;
+    private javax.swing.JCheckBox engraveMod;
+    private javax.swing.JCheckBox hiCapMod;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField output;
+    private javax.swing.JTextField storeCreditField;
+    // End of variables declaration                   
+}
